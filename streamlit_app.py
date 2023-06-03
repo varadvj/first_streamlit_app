@@ -1,7 +1,6 @@
 import streamlit
 #import pandas
 import requests
-streamlit.stop()
 import snowflake.connector
 from urllib.error import URLError
 
@@ -50,6 +49,7 @@ streamlit.header("The Fruit Load List Contains :")
 streamlit.dataframe(my_data_rows)
 streamlit.write('Thanks for adding ', add_my_fruit)
 
+streamlit.stop()
 
 
 
