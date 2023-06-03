@@ -47,5 +47,4 @@ add_my_fruit = streamlit.text_input('What fruit would you like to add in this li
 
 if add_my_fruit:
     my_cur.execute(f"INSERT INTO fruit_load_list (fruit_name) VALUES ('{add_my_fruit}')")
-    my_con.commit()
     streamlit.write('Thanks for adding ', add_my_fruit)
